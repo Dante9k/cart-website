@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f2">
+  <meta name="description" content="购物车，把京东、淘宝、拼多多、得物、唯品会等平台的心动好物放在一起，平铺查看、比较同款、算清优惠与运费。下载安卓体验版。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="购物车 · 好物放一起，价格更清楚">
+  <meta property="og:description" content="一个属于你的跨平台购物清单。收集链接、比较同款、算清到手价。">
+  <meta property="og:url" content="https://dante9k.github.io/cart-website/">
+  <meta property="og:image" content="https://dante9k.github.io/cart-website/assets/mobile-screen.png">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://dante9k.github.io/cart-website/">
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./main.js" defer></script>
+  <title>购物车 · 好物放一起，价格更清楚</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="m10 14 4-4m-6 6-2 2a4 4 0 0 1-6-6l5-5a4 4 0 0 1 6 0m2 1 2-2a4 4 0 0 1 6 6l-5 5a4 4 0 0 1-6 0" transform="translate(1 -1)"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-compare" viewBox="0 0 24 24"><path d="M4 7h15l-4-4m4 4-4 4M20 17H5l4-4m-4 4 4 4"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  </defs></svg>
+
+  <header class="site-header"><div class="nav-wrap">
+    <a class="brand" href="#top" aria-label="购物车首页"><img src="./assets/icon.svg" width="38" height="38" alt=""><span>购物车<span class="brand-dot">.</span></span></a>
+    <nav aria-label="主导航"><a href="#features">为什么用购物车</a><a href="#how-it-works">使用方法</a><a href="#faq">常见问题</a></nav>
+    <a class="button nav-download" href="#download">下载体验 <svg><use href="#i-arrow"/></svg></a>
+  </div></header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="top">
+      <div class="hero-copy">
+        <p class="release-pill"><span></span>购物车 v0.1.0 <i></i> Android 体验版</p>
+        <h1>好物放一起，<br><span>价格更清楚。</span></h1>
+        <p class="hero-description">心动可以散落在各个平台，<br>比较和决定，留在同一个购物车。</p>
+        <p class="hero-detail">复制商品链接，放进你的专属清单。<br class="desktop-break">从同款价格到优惠运费，一起看，一起算。</p>
+        <div class="hero-actions"><a class="button button-primary apk-link" href="https://github.com/Dante9k/cart-website/releases/download/v0.1.0/cart-0.1.0-android.apk"><svg><use href="#i-download"/></svg>下载安卓体验版</a><a class="button button-text" href="#screens">先看看界面 <svg><use href="#i-arrow"/></svg></a></div>
+        <p class="hero-note">Android 8.0+ <span>·</span> 无需注册 <span>·</span> 清单保存在本机</p>
+        <div class="platform-line"><span class="platform-label">把这些平台的好物，放一起</span><div class="platform-list"><span><b class="platform-jd">京</b>京东</span><span><b class="platform-taobao">淘</b>淘宝</span><span><b class="platform-pdd">拼</b>拼多多</span><span><b class="platform-dewu">得</b>得物</span><span><b class="platform-vip">唯</b>唯品会</span><span class="platform-more">等</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-orbit orbit-one" aria-hidden="true"></div><div class="visual-orbit orbit-two" aria-hidden="true"></div><span class="visual-spark spark-one" aria-hidden="true">✳</span><span class="visual-spark spark-two" aria-hidden="true">＋</span>
+        <div class="floating-note note-left"><span class="note-icon"><svg><use href="#i-link"/></svg></span><div><strong>复制，粘贴，放一起。</strong><small>心动好物，一个入口</small></div></div>
+        <button class="phone-frame hero-phone" data-preview="./assets/mobile-screen.png" data-preview-title="购物车首页 · 示例商品与演示价格" aria-label="放大查看购物车首页截图"><span class="phone-camera" aria-hidden="true"></span><img src="./assets/mobile-screen.png" width="780" height="1688" alt="购物车手机首页：已选合计、粘贴商品链接、按平台筛选和双列商品卡片"><span class="phone-caption">APP 实际界面 · 示例数据</span></button>
+        <div class="floating-note note-right"><span class="note-icon"><svg><use href="#i-check"/></svg></span><div><strong>多看一眼，更好决定。</strong><small>优惠、运费，也算进来</small></div></div>
+        <p class="visual-caption">把心动放一起，把价格算清楚。</p>
+      </div>
+    </section>
+
+    <section class="benefit-strip"><div class="section-wrap"><span><svg><use href="#i-grid"/></svg>跨平台好物，一眼看全</span><span><svg><use href="#i-compare"/></svg>同款放一组，比较更轻松</span><span><svg><use href="#i-shield"/></svg>无需账号，本机保存</span></div></section>
+
+    <section class="features-section section-wrap" id="features">
+      <div class="section-heading"><p class="eyebrow">A LITTLE LESS BACK AND FORTH</p><h2>少一点来回切换，<br>多一点心中有数。</h2><p>收集、比较、计算。购物前的功课，一张清单就能理清。</p></div>
+      <div class="feature-layout">
+        <article class="feature-card collect-card"><div class="feature-card-copy"><span class="feature-number">01 / 收集</span><h3>散落的好物，<br>现在有了共同的家。</h3><p>粘贴链接或完整分享文案，一次添加多个商品。卡片平铺展示，支持平台筛选、搜索和收藏。</p></div><div class="collection-illustration" aria-hidden="true"><span class="mini-platform mini-pdd">拼多多</span><span class="mini-platform mini-jd">京东</span><span class="mini-platform mini-vip">唯品会</span><span class="mini-platform mini-taobao">淘宝</span><span class="mini-platform mini-dewu">得物</span><div class="collection-center"><img src="./assets/icon.svg" width="68" height="68" alt=""><span>你的购物车</span></div><div class="collection-ring"></div></div></article>
+        <article class="feature-card compare-card"><div class="feature-card-copy"><span class="feature-number">02 / 比较</span><h3>同一件心动，<br>看清不同平台的价格。</h3><p>把同款商品放进同一分组，按含优惠和运费的折合单价排序。下决定前，再核对一下规格。</p></div><div class="comparison-example"><div class="example-heading"><span>日常运动鞋</span><small>同款 · 米灰色 / 38 码</small></div><div class="example-row best"><span><b class="platform-pdd">拼</b>拼多多</span><div><strong>¥339.00</strong><small><svg><use href="#i-check"/></svg>同组单价最低</small></div></div><div class="example-row"><span><b class="platform-dewu">得</b>得物</span><div><strong>¥359.00</strong><small>折合单价 / 件</small></div></div><p class="example-disclaimer">功能示意 · 商品与价格仅用于演示</p></div></article>
+      </div>
+      <div class="calculation-band"><div><span class="feature-number">03 / 算清</span><h3>到手多少钱，不只看标价。</h3><p>数量、优惠、运费一并计算；没有填价格的商品，会明确提示。</p></div><div class="price-formula" aria-label="到手小计等于单价乘数量减优惠加运费"><span>单价 <b>×</b> 数量</span><b>−</b><span>优惠</span><b>＋</b><span>运费</span><b>＝</b><strong>到手小计</strong><small>优惠按整行填写，最多抵扣商品金额。</small></div></div>
+    </section>
+
+    <section class="how-section" id="how-it-works"><div class="section-wrap"><div class="section-heading"><p class="eyebrow">THREE SMALL STEPS</p><h2>从“想买”，到“想清楚”。</h2><p>不用重新整理一份表格，把熟悉的分享链接粘贴过来就好。</p></div><div class="steps"><article><div class="step-top"><span>01</span><svg><use href="#i-link"/></svg></div><h3>复制商品链接</h3><p>在购物平台打开商品，选择分享，复制链接或带网址的分享文案。</p><span class="step-tip">也支持一次粘贴多个链接</span></article><article><div class="step-top"><span>02</span><svg><use href="#i-bag"/></svg></div><h3>放进同一个购物车</h3><p>点击“粘贴商品链接”，整理成商品卡片。读取不到的信息可以手动补充。</p><span class="step-tip">公开页面可读取的信息会尝试填入</span></article><article><div class="step-top"><span>03</span><svg><use href="#i-check"/></svg></div><h3>核对规格，算清价格</h3><p>填写优惠与运费，把同款放入相同分组。勾选商品，就能查看到手合计。</p><span class="step-tip">实际成交价以平台结算为准</span></article></div></div></section>
+
+    <section class="screens-section section-wrap" id="screens"><div class="screens-copy"><p class="eyebrow">A CALMER WAY TO COMPARE</p><h2>打开清单，<br>心动与预算都清楚。</h2><p>让不同平台的商品，有同样清楚的展示方式。看一眼图片，核对一下规格，再算算这次准备花多少。</p><ul class="check-list"><li><svg><use href="#i-check"/></svg>双列卡片，商品平铺展示</li><li><svg><use href="#i-check"/></svg>随时编辑价格、数量和备注</li><li><svg><use href="#i-check"/></svg>收藏喜欢的好物，慢慢决定</li><li><svg><use href="#i-check"/></svg>导出 JSON 备份或 CSV 价格表</li></ul><p class="screen-hint">展示的是实际 App 截图，使用示例商品与演示价格。<br>可滚动查看完整清单，或点击放大。</p><button class="button button-text" data-preview="./assets/mobile-home.png" data-preview-title="完整商品清单 · 示例商品与演示价格">放大查看完整界面 <svg><use href="#i-arrow"/></svg></button></div><div class="screen-gallery"><div class="gallery-label"><span class="live-dot"></span>我的好物 <span>APP 界面预览</span></div><div class="screenshot-scroll" tabindex="0" role="region" aria-label="可滚动查看的商品清单截图"><img src="./assets/mobile-home.png" width="780" height="3700" loading="lazy" alt="购物车完整清单，展示耳机、运动鞋、键盘和精华乳等示例商品卡片"></div><div class="gallery-bottom">不同平台，同一张清单。<span>滚动查看 ↓</span></div></div></section>
+
+    <section class="download-section section-wrap" id="download"><div class="download-panel"><div class="download-copy"><p class="eyebrow">MAKE ROOM FOR BETTER CHOICES</p><h2>下一件心动，<br>先放进购物车。</h2><p>把好物收在一起，给决定留一点余地。</p><div class="download-actions"><a class="button button-lime apk-link" href="https://github.com/Dante9k/cart-website/releases/download/v0.1.0/cart-0.1.0-android.apk"><svg><use href="#i-download"/></svg>下载安卓体验版</a><span class="ios-status">iPhone 版开发中<br><small>暂无可安装版本</small></span></div><p class="download-version">v0.1.0 <span>·</span> Android 8.0 及以上 <span>·</span> APK / 约 49 KB</p></div><div class="install-guide"><h3>安装前，看这几件小事</h3><ol><li>在安卓手机上下载 APK 文件。</li><li>打开安装包，按系统提示允许本次安装。</li><li>安装后粘贴自己的商品链接，开始整理。</li></ol><p>当前为开发证书签名的体验版，未上架应用商店，尚未完成真机验证。请保持系统 WebView 更新。</p><a href="https://github.com/Dante9k/cart-website/releases/tag/v0.1.0" target="_blank" rel="noopener noreferrer">查看版本说明与 SHA-256 校验值 <svg><use href="#i-arrow"/></svg></a></div></div></section>
+
+    <section class="faq-section section-wrap" id="faq"><div class="faq-heading"><p class="eyebrow">A FEW THINGS TO KNOW</p><h2>你可能想问。</h2><p>先把能力和边界说清楚，<br>用起来才更安心。</p><a class="button button-text" href="https://github.com/Dante9k/cart-website/issues" target="_blank" rel="noopener noreferrer">反馈问题或建议 <svg><use href="#i-arrow"/></svg></a></div><div class="faq-list">
+      <details open><summary>支持哪些购物平台？<svg><use href="#i-plus"/></svg></summary><div>支持识别京东、淘宝、天猫、拼多多、得物、唯品会、苏宁易购、小米商城、1688、抖音商城的链接及部分官方短链。纯淘口令需要先在淘宝打开，再复制包含网址的分享链接。</div></details>
+      <details><summary>粘贴链接后，所有信息都会自动填好吗？<svg><use href="#i-plus"/></svg></summary><div>会尝试读取公开页面提供的名称、图片和标价。需要登录、验证或仅在平台 App 内展示的信息可能无法读取，此时会保留链接供你手动补充。不同规格、会员价、平台券和地区价也需要自行核对。</div></details>
+      <details><summary>这是实时全网比价工具吗？<svg><use href="#i-plus"/></svg></summary><div>当前版本帮助你整理自己添加的商品，并比较填写后的价格；不会自动搜索全网最低价，也不提供实时价格监控、自动领券或自动下单。</div></details>
+      <details><summary>优惠、数量和运费怎么计算？<svg><use href="#i-plus"/></svg></summary><div>到手小计 = max(0, 单价 × 数量 − 整行优惠) + 整行运费。优惠最多抵扣商品金额，数量变化后请重新核对优惠条件。跨商品满减需手动分摊，避免重复抵扣。未填写价格的商品不会被当作零元商品计入。</div></details>
+      <details><summary>需要登录吗？换手机后清单还在吗？<svg><use href="#i-plus"/></svg></summary><div>无需注册或登录，商品清单保存在当前设备。当前没有账号云同步，卸载 App 或清理应用数据会删除清单。建议定期导出 JSON 备份，换设备后可导入并合并；也可导出 CSV 价格表。</div></details>
+      <details><summary>iPhone 现在可以使用吗？<svg><use href="#i-plus"/></svg></summary><div>iPhone 版仍在开发中，目前没有可供普通用户安装的版本，也没有 App Store 下载入口。官网会在可安装版本准备好后更新。</div></details>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="section-wrap footer-top"><div><a class="brand" href="#top"><img src="./assets/icon.svg" width="34" height="34" alt=""><span>购物车<span class="brand-dot">.</span></span></a><p>把心动放一起，把价格算清楚。</p></div><div class="footer-links"><a href="#download">下载体验</a><a href="./privacy.html">数据与隐私</a><a href="https://github.com/Dante9k/cart-website" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><div class="section-wrap footer-bottom"><span>© 2026 购物车 · v0.1.0</span><p>独立的商品清单工具，与所列购物平台无隶属或官方合作关系。</p><a href="#top">回到顶部 ↑</a></div></footer>
+  <dialog id="preview-dialog" aria-labelledby="preview-title"><div class="preview-header"><h2 id="preview-title">界面预览</h2><button class="preview-close" aria-label="关闭界面预览"><svg><use href="#i-close"/></svg></button></div><div class="preview-image-wrap"><img id="preview-image" alt=""></div></dialog>
+</body>
+</html>
